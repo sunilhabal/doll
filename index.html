@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolll</title>
+  </head>
+  <style>
+    .doll {
+      height: 212px;
+      width: 280px;
+      background-color: brown;
+      margin: 300px auto;
+      background-image: url("img/img1.png");
+      background-size: cover;
+      box-shadow: 0px 0px 10px 5px rgba(39, 31, 31, 0.1);
+      position: relative;
+    }
+
+    .over {
+      height: 212px;
+      width: 280px;
+      background-color: rgba(20, 16, 16, 0.1);
+      position: absolute;
+      top: -212px;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-out;
+    }
+
+    .doll:hover .over {
+      top: 0px;
+    }
+
+    .over > a {
+      height: 50px;
+      width: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+      top: 81px;
+      left: 83px;
+    }
+
+    .imp {
+      left: 103px !important;
+    }
+
+    .sharan {
+      left: 100px !important;
+    }
+  </style>
+  <body>
+    <div class="doll">
+      <div class="over">
+        <a href="#" class="sharan">Sharan</a>
+        <a href="#" class="imp">raj</a>
+      </div>
+    </div>
+  </body>
+</html>
